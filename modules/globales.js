@@ -1,8 +1,9 @@
-async function fetchData(url) {
-  const response = await fetch(url)
-  const data = await response.json();
-  return data;
-}
+// * global
 
-fetchData(`https://api.themoviedb.org/3/movie/550?api_key=4e81a8e43b469ae9ace346dce389beba`)
-  .then(data => console.log(data.genres))  
+// * proccess
+
+// * __dirname
+
+// * __filename
+
+console.log(__filename);
