@@ -15,7 +15,7 @@ http.createServer((req, res) => {
       break;
 
     default:
-      res.write(`Error 404, No exite esta ruta!!. ${new Date()}`);
       res.end();
+      res.write(`Error 404, No exite esta ruta!!. ${new Date()}`);
   }
 }).listen(PORT, "localhost");
