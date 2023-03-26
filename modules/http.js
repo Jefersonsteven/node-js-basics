@@ -1,13 +1,15 @@
 const http = require('http');
 
 const PORT = 3010;
-console.log(`Server open in port: http://localhost:${PORT} 🚀`);
+console.log(`
+Server open in port: http://localhost:${PORT}/home 🚀
+`);
 
 http.createServer((req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   
   res.writeHead(200, { "Content-Type": "text/plain" })
-
+  console.log('Hi');
   switch(req.url) {
     case '/home':
       res.write('Hola, haz llegado al home');
